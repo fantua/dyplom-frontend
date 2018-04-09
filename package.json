@@ -1,0 +1,41 @@
+{
+  "name": "dyplom-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "chart.js": "^2.7.1",
+    "classnames": "^2.2.5",
+    "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.3",
+    "node-sass-chokidar": "^0.0.3",
+    "normalizr": "^3.2.4",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-chartjs-2": "^2.6.4",
+    "react-dom": "^16.2.0",
+    "react-modal-hoc": "^0.1.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "react-scripts": "1.0.17",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-async-catch": "^0.2.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "url-search-params-polyfill": "^2.0.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "yarn run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

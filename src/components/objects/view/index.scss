@@ -1,0 +1,24 @@
+.object-container {
+  .object-info tbody {
+    th {
+      width: 40%;
+      text-align: right;
+      padding-right: .75rem;
+    }
+
+    td {
+      padding-left: .75rem;
+    }
+  }
+
+  .object-last-stats tbody {
+    td {
+      border: none;
+      padding: 0 .75rem;
+      line-height: 33px;
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
